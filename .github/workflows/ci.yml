@@ -13,10 +13,15 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
       - name: Set up uv
         uses: astral-sh/setup-uv@v3
         with:
-          python-version: "3.11"
+          version: "latest"
 
       - name: Install dependencies
         run: uv pip install -r pyproject.toml
@@ -27,10 +32,4 @@ jobs:
 
       - name: Export HTML report (no execute)
         run: |
-          jupyter nbconvert --to html notebooks/01_analyze_runs.ipynb --output 01_analyze_runs.html
-
-      - name: Upload report artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: notebook-report
-          path: notebooks/01_analyze_runs.html
+          jupyter nbconvert --to html notebooks/01_analyze_runs.ipynb --ou
