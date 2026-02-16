@@ -23,13 +23,22 @@ jobs:
         with:
           version: "latest"
 
+      - name: Create venv
+        run: uv venv
+
       - name: Install dependencies
         run: uv pip install -r pyproject.toml
 
       - name: Execute notebook (in-place)
         run: |
-          jupyter nbconvert --to notebook --execute notebooks/01_analyze_runs.ipynb --inplace
+          uv run jupyter nbconvert --to notebook --execute notebooks/01_analyze_runs.ipynb --inplace
 
       - name: Export HTML report (no execute)
         run: |
-          jupyter nbconvert --to html notebooks/01_analyze_runs.ipynb --ou
+          uv run jupyter nbconvert --to html notebooks/01_analyze_runs.ipynb --output 01_analyze_runs.html
+
+      - name: Upload report artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: notebook-report
+          path: notebooks/01_analyze_runs.html
