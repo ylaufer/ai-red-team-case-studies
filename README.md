@@ -1,3 +1,5 @@
+![CI](../../actions/workflows/ci.yml/badge.svg)
+
 # AI Red Team Case Studies
 
 **Author:** Yanina Laufer  
@@ -23,6 +25,11 @@ This repository contains structured adversarial testing case studies designed to
 The goal is to demonstrate systematic AI Red Team methodology aligned with formal AI testing principles.
 
 ## Setup
+
+```bash
+uv venv --clear
+uv pip install -r pyproject.toml
+
 
 Using uv:
 
