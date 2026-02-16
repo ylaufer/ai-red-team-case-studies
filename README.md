@@ -1,0 +1,26 @@
+# AI Red Team Case Studies
+
+Author: Yanina Laufer
+ISTQB Certified Tester – AI Testing (CT-AI)
+
+This repository contains structured adversarial testing case studies designed to evaluate failure modes in large language models (LLMs).
+
+Each case study includes:
+
+Test objective
+
+Prompt design strategy
+
+Observed behavior
+
+Failure classification
+
+Reproducibility notes
+
+Severity assessment
+
+Risk impact analysis
+
+Mitigation suggestions
+
+The goal is to demonstrate systematic AI Red Team methodology aligned with formal AI testing principles.
