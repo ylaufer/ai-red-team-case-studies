@@ -1,5 +1,4 @@
 # Runs Schema
-# Runs Schema (LLM Red Team)
 
 Each row represents one model interaction (one prompt run).
 
