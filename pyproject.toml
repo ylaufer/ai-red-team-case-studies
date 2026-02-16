@@ -1,0 +1,8 @@
+[project]
+name = "ai-red-team-case-studies"
+version = "0.1.0"
+dependencies = [
+    "pandas",
+    "matplotlib"
+    "jupyter"
+]

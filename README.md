@@ -21,3 +21,12 @@ This repository contains structured adversarial testing case studies designed to
 ---
 
 The goal is to demonstrate systematic AI Red Team methodology aligned with formal AI testing principles.
+
+## Setup
+
+Using uv:
+
+uv venv
+uv pip install .
+
+Note: On Windows without `make`, run commands directly.
