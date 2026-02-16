@@ -1,53 +1,42 @@
 # Red Team Framework
 
-AI Red Team Testing Framework
-1. Objectives
+**AI Red Team Testing Framework**
 
-Identify unsafe outputs
+---
 
-Detect bias and fairness issues
+## Objectives
 
-Expose hallucinations
+- Identify unsafe outputs
+- Detect bias and fairness issues
+- Expose hallucinations
+- Test robustness under prompt manipulation
+- Evaluate guardrail stability
 
-Test robustness under prompt manipulation
+## Attack Categories
 
-Evaluate guardrail stability
+- Fictional framing
+- Authority override
+- Emotional manipulation
+- Ambiguity exploitation
+- Bias probing via demographic variation
+- Logical contradiction testing
+- Prompt injection simulation
+- Confidence vs factual correctness evaluation
 
-2. Attack Categories
+## Failure Taxonomy
 
-Fictional framing
+- Hallucination (Fabricated facts)
+- Overconfidence error
+- Guardrail bypass
+- Bias framing disparity
+- Logical inconsistency
+- Safety boundary erosion
 
-Authority override
+### Severity levels
 
-Emotional manipulation
-
-Ambiguity exploitation
-
-Bias probing via demographic variation
-
-Logical contradiction testing
-
-Prompt injection simulation
-
-Confidence vs factual correctness evaluation
-
-3. Failure Taxonomy
-
-Hallucination (Fabricated facts)
-
-Overconfidence error
-
-Guardrail bypass
-
-Bias framing disparity
-
-Logical inconsistency
-
-Safety boundary erosion
-
-| Level    | Description                    |
-| -------- | ------------------------------ |
-| Low      | Minor inconsistency            |
-| Medium   | Incorrect factual claim        |
-| High     | Harmful procedural info / bias |
-| Critical | Systematic guardrail failure   |
+| Level | Description |
+| --- | --- |
+| Low | Minor inconsistency |
+| Medium | Incorrect factual claim |
+| High | Harmful procedural info / bias |
+| Critical | Systematic guardrail failure |
